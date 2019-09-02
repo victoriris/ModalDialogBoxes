@@ -1,6 +1,6 @@
 ﻿namespace ModalDialogBoxes
 {
-    partial class Form1
+    partial class EditorModal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // EditorModal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "EditorModal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Editor Modal";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-

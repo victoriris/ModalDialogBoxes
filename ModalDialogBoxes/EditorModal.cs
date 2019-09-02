@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ModalDialogBoxes
 {
-    public partial class Form1 : Form
+    public partial class EditorModal : Form
     {
-        public Form1()
+        public EditorModal()
         {
             InitializeComponent();
         }
