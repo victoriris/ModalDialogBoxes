@@ -135,6 +135,7 @@
             // 
             // okBtn
             // 
+            this.okBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.okBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.okBtn.Location = new System.Drawing.Point(69, 192);
             this.okBtn.Name = "okBtn";
@@ -142,9 +143,11 @@
             this.okBtn.TabIndex = 7;
             this.okBtn.Text = "OK";
             this.okBtn.UseVisualStyleBackColor = true;
+            this.okBtn.Click += new System.EventHandler(this.OkBtn_Click);
             // 
             // cancelBtn
             // 
+            this.cancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelBtn.Location = new System.Drawing.Point(220, 192);
             this.cancelBtn.Name = "cancelBtn";
