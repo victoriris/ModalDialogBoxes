@@ -13,11 +13,11 @@ namespace ModalDialogBoxes
         public MainForm()
         {
             InitializeComponent();
-            reloadIngredientsView();
-            
+            editorModal.breadType = "Regular";
+            refreshDataView();
         }
 
-        private void reloadIngredientsView ()
+        private void refreshDataView ()
         {
             this.ingredientsSource = new BindingSource(editorModal.ingredients.Where(i => i.Value), null);
             ingredientList.DataSource = ingredientsSource;
@@ -25,29 +25,18 @@ namespace ModalDialogBoxes
             ingredientList.ValueMember = "Value";
             ingredientList.Enabled = false;
             ingredientList.ClearSelected();
+
+            this.customerNameView.Text = editorModal.customerName;
+            this.breadTypeView.Text = editorModal.breadType;
         }
         
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void OpenEditorBtn_Click(object sender, EventArgs e)
         {
             editorModal.ShowDialog(this);
-            this.reloadIngredientsView();
-        }
-
-        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            this.refreshDataView();
         }
 
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

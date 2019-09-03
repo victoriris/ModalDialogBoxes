@@ -190,6 +190,7 @@
             this.Name = "EditorModal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Edit Order";
+            this.Load += new System.EventHandler(this.EditorModal_Load);
             this.ingredientsBox.ResumeLayout(false);
             this.ingredientsBox.PerformLayout();
             this.breadBox.ResumeLayout(false);
