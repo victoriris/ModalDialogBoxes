@@ -45,7 +45,7 @@ namespace ModalDialogBoxes
             breadTypeBox.SelectedIndex = breadTypeBox.Items.IndexOf(breadType);
         }
 
-        private void saveIngredients()
+        private void saveFormData()
         {
             // Get all ingredient boxes and stores their value
             var checkBoxes = ingredientsBox.Controls.OfType<CheckBox>();
@@ -63,7 +63,7 @@ namespace ModalDialogBoxes
 
         private void OkBtn_Click(object sender, EventArgs e)
         {
-            saveIngredients();
+            saveFormData();
         }
 
         private void EditorModal_Load(object sender, EventArgs e)
